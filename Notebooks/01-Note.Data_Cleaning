@@ -1,0 +1,6 @@
+### 3.1 Data Cleaning
+
+We checked for missing values and duplicates in the dataset. No missing values were found. Any duplicate rows (if any) were dropped.
+
+We also ensured all numerical and categorical columns were properly formatted.
+

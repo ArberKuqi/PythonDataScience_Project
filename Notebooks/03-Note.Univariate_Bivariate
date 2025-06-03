@@ -1,0 +1,26 @@
+
+## Univariate Analysis
+
+1. **Age Distribution**
+   Histograma e moshës na jep pamjen e shpërndarjes së grup-moshave të lojtarëve. Sipas këtij grafiku, shumica e lojtarëve janë midis 23-28 vjeç.
+
+2. **Number of Players by Position**
+   Bar chart tregon sa lojtarë ka secili pozicion (p.sh. 60 mesfushorë, 50 mbrojtës, etj.). Kjo ndihmon të kuptojmë sesa të balancuara janë pozicionet në dataset.
+
+## Bivariate Analysis
+
+1. **Goals vs Assists by Position**
+   Scatter plot na tregon se si sulmuesit (Forwards) dhe mesfushorët (Midfielders) dallojnë në mes të golave dhe asistimeve. Sulmuesit janë përgjithësisht në zonën e majtë lartë (gola të lartë, asistime të ulëta), ndërsa mesfushorët shpërndahen më mirë në pjesën e mesme.
+
+2. **Player Rating Distribution by Position**
+   Boxplot tregon se mbrojtësit kanë shpërndarje më të ngushtë (më pak variacion) se sa mesfushorët në rating. Mbrojtësit zakonisht kanë vlerësime të qëndrueshme, ndërsa mesfushorët mund të luhaten më shumë.
+
+3. **Market Value vs Player Rating (Trendline)**
+   Ky scatter me regresion linear tregon një lidhje pozitive: lojtarët me vlerë të lartë në treg (Value10^6) kanë tendencë të kenë rating më të lartë. Sidoqoftë, ekzistojnë disa pikëpamje jashtë vijës (outliers) që duhet të shqyrtohen më tej.
+
+4. We selected the 10 players with the most goals in the tournament and compared their performance in terms of:
+- Total Goals Scored
+- Assists Provided
+- Minutes Played
+
+This infographic helps identify not only who scored the most, but also who was the most efficient and influential in the attacking third.
