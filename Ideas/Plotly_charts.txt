@@ -1,0 +1,22 @@
+1. Bar chart
+px.bar(dataframe, x="kategoria", y="vlera")
+
+2. Pie Chart (Grafik me Rreth)
+px.pie(dataframe, names="kategoria", values="vlera")
+
+3. Sunburst Chart (Grafik me Rrethe Hierarkike)
+px.sunburst(df, path=["shteti", "roli"], values="numri")
+
+
+4. Treemap (Grafik me Blloqe)
+px.treemap(df, path=["shteti", "roli"], values="numri")
+
+5. Box Plot (Grafik Kutie)
+px.box(df, x="kategoria", y="vlera")
+
+6. Violin Plot
+px.violin(df, x="kategoria", y="vlera")
+
+
+7. Strip Plot / Scatter Plot (me kategorike në bosht)
+px.strip(df, x="kategoria", y="vlera")
