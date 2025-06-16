@@ -32,7 +32,7 @@ if uploaded_file is not None:
     if selected_columns:
         st.dataframe(ucl[selected_columns].head(20))  # vetëm 20 rreshtat e parë për shembull
     else:
-        st.info("Zgjedh se paku një kolonë për ta parë.")
+        st.info("Zgjedh nje kolon per a par.")
 
 
 
