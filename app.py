@@ -1,11 +1,13 @@
 import streamlit as st
 import pandas as pd
+import json
 import numpy as np
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-st.title("Champions League Analysis⭐")
-st.header("Welcome to Champions League Analysis")
+st.title("Champions League Player Stats Analysis⭐🏆")
+
+st.header("Welcome to Best Players of Champions League Analysis")
 
 uploaded_file = st.file_uploader("Choose a file",type='xlsx')
 
@@ -15,10 +17,10 @@ if uploaded_file is not None:
     st.subheader("Data Preview")
     st.write(ucl.head(10))
 
-    st.subheader("Permbledhje e Datasetit")
+    st.subheader("Dataset Summary")
     st.write(ucl.describe())
 
-    st.subheader('Kolonat e Datasetit')
+    st.subheader('Dataset Columnst')
     columns = ucl.columns.tolist()
     selected_column = st.selectbox('Select a column to filter by ', columns)
     unique_values = ucl[selected_column].unique()
@@ -28,11 +30,11 @@ if uploaded_file is not None:
     st.write(filtered_ucl)
 
     st.subheader('Select Multiple Columns ')
-    selected_columns = st.multiselect("Zgjedh kolonat:", ucl.columns.tolist())
+    selected_columns = st.multiselect("Select columns:", ucl.columns.tolist())
     if selected_columns:
         st.dataframe(ucl[selected_columns].head(20))  # vetëm 20 rreshtat e parë për shembull
     else:
-        st.info("Zgjedh nje kolon per a par.")
+        st.info("You must select at least one column❔")
 
 
 
